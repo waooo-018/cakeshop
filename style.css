@@ -1,0 +1,1082 @@
+
+body {
+    font-family: "Noto Sans JP", "游ゴシック体", sans-serif;
+    color: #4b2e22;
+    background-image:url(img/all-back.png);
+    letter-spacing: .04em;
+}
+
+p {
+    font-size: 15px;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+h2{
+    position: relative;
+    display: inline-block;
+    padding: 0 55px;
+    font-size: larger;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  
+  h2:before, h2:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    width: 45px;
+    height: 2px;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+  }
+  
+  h2:before {
+    left:-20px;
+  }
+  h2:after {
+    right: -20px;
+  }
+
+  ul {
+    margin-top: 0;
+  }
+
+/* PC用スタイル */
+body {
+    margin: 0 auto 0 auto;
+}
+
+/* ヘッダー */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: rgba(205, 194, 174,0.3);
+}
+
+.header-logo {
+    height: 90px;
+    width: auto;
+    margin-left: 40px;
+}
+
+#nav-pc {
+    font-size: 14px;
+    padding-top: 0px;
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    margin: 10px 0;
+}
+
+.nav-item {
+    margin-left: 20px;
+    text-decoration: none;
+    position: relative;
+    list-style: none;
+}
+
+.nav-item::before {
+    content: "❘";
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+.nav-item > a {
+    padding-left: 20px;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* バーガー */
+#nav-sp, .burger, .menu {
+    display: none;
+}
+
+/* メインビジュアル */
+.main {
+    background-color: rgba(244,241,234, 0.3);
+}
+
+.main-visual-img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.sp-only {
+    display: none!important;
+}
+
+.pc-only {
+    display: block!important;
+}
+
+/* スライダー */
+.slider {
+    position:relative;
+    height: 100vh;
+    padding: 0 ;
+  }
+  
+  .slider-item {
+      width: 100%;
+      height:100vh;
+  }
+
+  /* 矢印 */
+  .slick-prev , .slick-arrow {
+        display: none!important;
+  }
+  
+  /*ドットナビゲーションの設定*/
+  
+  .slick-dots {
+      position: relative;
+      z-index: 3;
+      text-align:center;
+      margin:-50px 0 0 0;/*ドットの位置*/
+  }
+  
+  .slick-dots li {
+      display:inline-block;
+      margin:0 5px;
+  }
+  
+  .slick-dots button {
+      color: transparent;
+      outline: none;
+      width:10px;
+      height:10px;
+      display:block;
+      border-radius:60%;
+      background:#fff;
+  }
+  
+  .slick-dots .slick-active button{
+      background:#333;
+  }
+
+  .slick-slider {
+    height: auto;
+  }
+
+/* 店舗について */
+#introduction {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: rgba(244,241,234, 0.3);
+    background-image: url(img/dot1.png);
+}
+
+.introduction-main {
+    text-align: center;
+    height: 450px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.introduction-h2, .introduction-p, .introduction-logo {
+    z-index: 20;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.introduction-back {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    z-index: 10;
+    height: 100%;
+    opacity: 0.5;
+}
+
+
+.introduction-logo {
+    height: 130px;
+    margin-top: 0;
+    margin: 0 auto;
+}
+
+.introduction-h2 {
+    top: 130px;
+    height: 30px;
+    width: 220px;
+    text-align: center;
+    margin: 15px auto;
+}
+
+.introduction-p {
+    top: 200px;
+    margin: auto;
+}
+
+.br-sp {
+    display: none;
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  top: 340px;
+}
+
+.btn, .btn--orange {
+  color: #fff;
+  background-color: #eb6100;
+  z-index: 20;
+}
+
+.btn--orange:hover,
+a.btn--orange:hover {
+  color: #fff;
+  background: #f56500;
+}
+
+a.btn--radius {
+  border-radius: 100vh;
+}
+
+.sp-introduction-back {
+    display: none;
+}
+
+/* 商品情報 */
+#production {
+    text-align: center;
+    background-color: rgba(255,254,249,0.4);
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.production-main {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.production-contents{
+    display: flex;
+    justify-content: center;
+}
+
+.production-img {
+    width: 80%;
+    height: auto;
+}
+
+/* 店舗情報 */
+#shop {
+    background-color:rgba(244,241,234, 0.3) ;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.shop {
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+
+.shop-main {
+    display: flex;
+    margin:auto;
+    justify-content: center;
+}
+
+.shop-h2 {
+    text-align: center;
+}
+
+.shop1, .shop2 {
+    width: 50%;
+    height: auto;
+    max-width: 500px;
+}
+
+.shop1 {
+    padding: 0 40px 0 0;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 700px;
+  }
+  .table th, .table td {
+    border-bottom: 2px solid #c1c7c6;
+    padding: 1em;
+  }
+  .table th {
+    border-bottom: 2px solid #eb6100;
+    font-weight: bold;
+    text-align: center;
+    width: 20%;
+    min-width: 4em;
+  }
+
+  .shop2 {
+    padding: 0 0 0 40px;
+  }
+
+  .map {
+    width: 100%;
+    height :100%;
+    border: none;
+  }
+
+  /* お問い合わせ */
+  #contact {
+    background-color:rgba(255,254,249,0.4) ;
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+
+  .contact-main {
+    text-align: center;
+  }
+
+  .tel {
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .instabanner {
+    height: 70px;
+    margin-top: 15px;
+  }
+
+  /* フッター */
+  .footer-menu {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    display: flex;
+    height: auto;
+    width: 100%;
+    background-color: rgba(205, 194, 174,0.3);
+    position: relative;
+    justify-content: center;
+  }
+
+  .footer-list {
+    display: flex;
+    position: absolute;
+    top: 0;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+.footer-item {
+    list-style: none;
+    margin-left: 50px;
+}
+
+.footer-item a {
+    text-decoration: none;
+    list-style: none;
+    color: #000;
+}
+
+.border {
+    width: 70%;
+    height: 20px;
+    position: absolute;
+    top: 55px;
+}
+
+.footer-shop {
+    margin-top: 70px;
+    width: 80%;
+    text-align: center;
+}
+
+.shop-1, .shop-2 {
+    height: auto;
+}
+
+.footer-logo {
+    height: 100px;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.shop-p {
+    font-size: 12px;
+    margin: 0;
+}
+
+.copyright {
+    text-align: center;
+}
+
+
+
+/* shop-html */
+#aboutus {
+    margin: 30px auto;
+    background-image: url(img/dot1.png);
+    background-position: center;
+    padding-inline: calc((100vw - 80%) / 2);
+}
+
+.about-us {
+    text-align: center;
+    justify-content: center;
+}
+
+.aboutus-h2 {
+    margin: 0 auto;
+}
+
+.aboutus-contents {
+    display: flex;
+    margin: 50px auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.aboutus-upleft {
+    width: 60%;
+    max-width: 800px;
+    height: auto;
+    text-align: center;
+    position: relative;
+}
+
+.aboutus-img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+}
+
+.aboutus-rabit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+}
+
+.aboutus-upright{
+    width: 40%;
+    max-width: 600px;
+}
+
+.vertical {
+    writing-mode: vertical-rl;
+    font-size: 20px;
+}
+
+span {
+    line-height: 40px;
+}
+
+.span1, .span2, .span3 {
+    display: block;
+    background-color: #fff;
+    line-height: 50px;
+    padding: 20px 6px;
+    font-weight: 600;
+    font-family: "Noto Serif JP", serif;;
+}
+
+.span1 {
+    max-height: 320px;
+}
+
+.span2 {
+    max-height:220px ;
+    margin-top: 50px;
+}
+
+.span3 {
+    max-height:400px ;
+    margin-top: 100px;
+}
+
+.aboutus-lwleft {
+    width: 50%;
+    max-width: 800px;
+}
+
+.aboutus-p {
+    font-size: 18px;
+}
+
+.aboutus-lwright {
+    width: 50%;
+    position: relative;
+    max-width: 600px;
+}
+
+.aboutus-rabitt {
+    position: absolute;
+    bottom: 0;
+    right: 70px;
+    width: 120px;
+}
+
+.cookie {
+    width: 100%;
+    height: auto;
+    max-width: 320px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
+/* product.html */
+#product {
+    text-align: center;
+}
+
+.product-main {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.product-h2 {
+    margin-bottom: 0;
+}
+
+.product-contents {
+    margin-top: 50px;
+}
+
+.product-container {
+    position: relative;
+}
+
+h3 {
+    position: absolute;
+    z-index: 20;
+    font-size: 26px;
+    top: 40%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    font-weight: bold;
+    margin: auto;
+    letter-spacing: 0.15em;
+}
+
+h4 {
+    margin: 0 0 1em 0;
+}
+
+.decocake-h3, .bake-h3 {
+    top: 55%;
+}
+
+.cakeback {
+    height: 200px;
+    width: 80vw;
+    opacity: 0.6;
+}
+
+.cb {
+    margin-top: 60px;
+}
+
+.rollcake {
+    max-width: 100%;
+    height: auto;
+} 
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 20px 0 0 0;
+}
+
+.gc {
+    margin-bottom: 80px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 1);
+    padding: 30px 30px 0 30px;
+    margin: 20px 20px 0 20px;
+    text-align: center;
+}
+
+
+
+/* media Queries 768-1024 ------------------------------------ */
+@media screen and  (min-width: 768px) and (max-width: 1024px){
+
+    .br-pc {
+        display: none;
+    }
+    
+    .about-us > span > .br-sp {
+        display: block;
+    }
+
+    /* shop-html */
+
+    .aboutus-img {
+        max-width: 450px;
+    }
+    
+    .aboutus-rabit {
+        top: -15%;
+        width: 100px;
+    }
+    
+    .aboutus-p {
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    
+    .aboutus-rabitt {
+        right: -5%;
+        width: 100px;
+    }
+    
+    .cookie {
+        max-width: 280px;
+        top: -50px;
+    }
+    
+
+    /* product.html */
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin: 20px 0 0 0;
+    }
+    
+    .cakeback {
+        height: 15vh;
+        width: 80vw;
+    }
+    
+    .rollcake {
+        width: 100%;
+        max-width: 150px;
+    } 
+    
+    .card {
+        padding: 15px 15px 0 15px;
+        margin: 15px 15px 0 15px;
+    }
+}
+
+
+
+/* media Queries 767 ------------------------------------*/
+@media screen and (max-width: 767px) {
+    body {
+      font-size: 14px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    .pc-only {
+        display: none;
+    }
+
+    span {
+        line-height: 30px;
+    }
+
+    .br-pc {
+        display: none;
+    }
+
+    /* ヘッダー */
+    header {
+        height: 60px;
+    }
+    
+    .header-logo {
+        height: 60px;
+        margin: 0 0 0 20px;
+    }
+
+    #nav-pc,.nav-list {
+        display: none;
+    }
+
+    #nav-sp {
+        display: block;
+    }
+    
+    /* バーガー */
+    .burger {
+        width: 50px;
+        height: 50px;
+        background-image: url(img/menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 24px;
+        margin: 0 20px 0 0;
+        border-radius: 4px;
+        position: relative;
+        z-index: 31;
+        display: block;
+    }
+
+    .burger:hover {
+        background-color: #ddd;
+        cursor: pointer;
+    }
+
+    .burger.is-active {
+        background-image: url(img/close.png);
+    }
+
+    .menu {
+        width: 100vw;
+        height: 100vh;
+        background-image:url(img/all-back.png);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 30;
+        color: #4b2e22;
+        text-align: center;
+    }
+
+    .menu.is-active {
+        display: block;
+    }
+
+    .menu-list {
+        display: block;
+        width: 100vw;
+        text-align: center;
+        padding: 0;
+        position: absolute;
+        margin: 0;
+    }
+    
+    .menu-item {
+        text-decoration: none;
+        list-style: none;
+        margin: 30px 0;
+        font-size: 16px;
+    }
+    
+    .menu-item > a {
+        padding-left: 20px;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .menu-logo {
+        margin-top: 20%;
+        width: 60vw;
+        height: auto;
+    }
+
+
+
+
+    /* main visual */
+    .pc-only {
+        display: none!important;
+    }
+
+    .sp-only {
+        display: block!important;
+    }
+
+    .slick-dots button {
+        display: none;
+    }
+
+
+    /* introduction */
+    #introduction {
+        background-size: contain;
+    }
+    
+    .introduction-main {
+        height: 400px;
+    }
+    
+    .sp-introduction-back {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        z-index: 10;
+        opacity: 0.5;
+    }
+    
+    
+    .introduction-logo {
+        height: 100px;
+    }
+    
+    .introduction-h2 {
+        top: 100px;
+        height: 30px;
+        width: 150px;
+    }
+    
+    .introduction-p {
+        top: 180px;
+        width: 92%;
+    }
+
+    .br-sp {
+        display: block;
+    }
+
+    .btn,
+a.btn,
+button.btn {
+  font-size: 0.9rem;
+  top: 320px;
+  padding: 0.8rem 2.5rem;
+}
+
+.introduction-back {
+    display: none;
+}
+
+
+
+/* 商品情報 */
+#production {
+    padding-bottom: 20px;
+}
+
+.production-main {
+    width: 65%;
+}
+
+.production-img {
+    width: 100%;
+}
+
+.production-contents{
+    display:block;
+}
+
+.content {
+    margin-bottom: 40px;
+}
+
+/* 店舗情報 */
+#shop {
+    padding-bottom: 20px;
+}
+
+.shop-main {
+    display: block;
+    margin: 0;
+}
+
+.shop1, .shop2 {
+    height: auto;
+    width: 100%;
+}
+
+.shop1 {
+    padding: 0;
+    margin: 0;
+}
+
+.table th {
+    width: 25%;
+    font-size: 12px;
+  }
+
+.shop2 {
+    margin: 40px 0 0 0;
+    padding: 0;
+  }
+
+.map {
+    height :300px;
+  }
+
+  /* footer */
+  .footer-list, .border  {
+    display: none;
+}
+
+.footer-shop {
+    margin-top: 20px;
+}
+
+
+/* shop.html */
+#aboutus {
+    background-repeat: repeat-y;
+    background-size: contain;
+}
+
+.aboutus-contents {
+    display: block;
+    margin: 30px auto;
+}
+
+.aboutus-upleft {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.aboutus-img {
+    max-width: 400px;
+}
+
+.aboutus-rabit {
+    top: -30px;
+    left: -10px;
+    width: 60px;
+}
+
+.aboutus-upright{
+    width: 100%;
+    max-width: 400px;
+}
+
+.vertical {
+    writing-mode: horizontal-tb;
+    font-size: 16px;
+    text-align: left;
+}
+
+.span1, .span2, .span3 {
+    display: inline;
+    line-height: 3.6;
+    padding: 1.6vw 3vw;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.aboutus-lwleft {
+    width: 100%;
+    max-width: 600px;
+}
+
+.aboutus-p {
+    font-size: 14px;
+    line-height: 10px;
+}
+
+.aboutus-lwright {
+    width: 100%;
+    position: relative;
+    max-width: 600px;
+    margin-top: 40px;
+}
+
+.aboutus-rabitt {
+    bottom: -5px;
+    right: 15%;
+    width: 80px;
+}
+
+.cookie {
+    max-width: 250px;
+    width: 60%;
+    position:static;
+    text-align: left!important;
+    margin: 0 40% 10px 0;
+}
+
+/* product.html */
+
+h3 {
+    font-size: 18px;
+    top: 40%;
+    letter-spacing: 0.1em;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+.decocake-h3, .bake-h3 {
+    top: 55%;
+}
+
+.cakeback {
+    height:20vw;
+}
+
+.cb {
+    margin-top: 35px;
+}
+
+.rollcake {
+    max-width: 100px;
+    width: 100%;
+} 
+
+.grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 10px 0 0 0;
+}
+
+.gc {
+    margin-bottom: 40px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 1);
+    padding: 10px 10px 0 10px;
+    margin: 10px 10px 0 10px;
+    text-align: center;
+}
+
+}
+
+/* media Queries 372以下-------------------------------------- */
+@media screen and (max-width: 372px) {
+
+    .sp-introduction-back {
+        height: 100%;
+        width: 100%;
+    }
+
+    .btn,
+    a.btn,
+    button.btn {
+    font-size: 0.8rem;
+    top: 340px;
+    padding: 0.7rem 2.4rem;
+    }
+}
+
